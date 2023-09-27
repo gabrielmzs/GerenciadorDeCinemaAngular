@@ -1,9 +1,9 @@
 <div class="row g-4">
 
     <h1 class="text-warning fw-bolder text-center">Favoritos</h1>
-    <p class="text-light text-center">"Esta é a sua seleção pessoal de filmes favoritos, uma lista única e especial de
+    <p class="text-light text-center">Esta é a sua seleção pessoal de filmes favoritos, uma lista única e especial de
         filmes que lhe marcaram de alguma forma. De dramas cativantes a aventuras emocionantes, cada filme nesta lista é
-        uma experiência cinematográfica memorável."
+        uma experiência cinematográfica memorável.
     </p>
     <div class="col-6 col-md-4 col-lg-2 d-grid gap-4 text-center  " *ngFor="let filme of filmesFavoritos">
         <div class="card-container card" routerLink="/view/filme-detalhes/{{filme.id}}">
