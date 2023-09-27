@@ -52,11 +52,13 @@ export class ListaComponent implements OnInit {
 
     this.tipoLista = "Resultados para: " + tipo,
 
-      this.filmeService.Pesquisar(tipo, this.page.toString()).subscribe((filmes) => {
+      this.tipoTexto = "";
 
-        this.filmes = filmes;
+    this.filmeService.Pesquisar(tipo, this.page.toString()).subscribe((filmes) => {
 
-      });
+      this.filmes = filmes;
+
+    });
   }
 
   GerarListaMelhores(pagina: string): any {
