@@ -1,3 +1,4 @@
+import { Artista } from "./artista";
 
 export class Filme {
     id: number;
@@ -8,10 +9,10 @@ export class Filme {
     posterUrl: string;
     videoUrl: string;
     anoLancamento: string;
-    diretor: string;
-    elenco: string[];
+    diretor?: Artista;
+    elenco?: Artista[];
 
-    constructor(id: number, nomePt: string, nomeOriginal: string, generos: string[], sinopse: string, posterUrl: string, videoUrl: string, anoLancamento: string, diretor: string, elenco: string[]) {
+    constructor(id: number, nomePt: string, nomeOriginal: string, generos: string[], sinopse: string, posterUrl: string, videoUrl: string, anoLancamento: string, diretor: Artista, elenco: Artista[]) {
         this.id = id
         this.nomePt = nomePt
         this.nomeOriginal = nomeOriginal
@@ -20,7 +21,7 @@ export class Filme {
         this.posterUrl = posterUrl
         this.videoUrl = videoUrl
         this.anoLancamento = anoLancamento
-        this.diretor = diretor
+        this.diretor = diretor;
         this.elenco = elenco
     }
 }

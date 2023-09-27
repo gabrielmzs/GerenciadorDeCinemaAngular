@@ -1,0 +1,20 @@
+/* styles.css */
+::ng-deep .pagination {
+    background-color: yellow;
+}
+
+::ng-deep .page-item.active .page-link {
+    background-color: black;
+    color: yellow;
+}
+
+::ng-deep .page-link {
+    color: black;
+}
+
+::ng-deep .pagination .page-item.active .page-link {
+    border-color: yellow !important;
+    /* Define a cor da borda como amarelo */
+    box-shadow: none !important;
+    /* Remove a sombra azul */
+}

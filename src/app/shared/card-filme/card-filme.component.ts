@@ -19,7 +19,7 @@ export class CardFilmeComponent {
     posterUrl: '',
     videoUrl: '',
     anoLancamento: '',
-    diretor: '',
-    elenco: []
+
+
   }
 }
