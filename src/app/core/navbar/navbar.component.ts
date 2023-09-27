@@ -14,6 +14,12 @@ export class NavbarComponent {
 
   constructor(private router: Router) { }
 
+  menuExpanded = false; // Inicialmente, o menu está recolhido
+
+  toggleMenu() {
+    this.menuExpanded = !this.menuExpanded; // Inverte o estado do menu
+  }
+
 
 
 }
