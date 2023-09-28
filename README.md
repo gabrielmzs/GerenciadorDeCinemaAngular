@@ -1,27 +1,63 @@
-# GerenciadorDeCinemaAngular
+# Gerenciador de Cinema
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+Este é o repositório do projeto **Gerenciador de Cinema**, uma aplicação web desenvolvida em Angular que permite aos usuários explorar e gerenciar informações sobre filmes. A aplicação oferece funcionalidades como visualizar os melhores filmes, os filmes em alta, seus filmes favoritos e realizar buscas por filmes.
 
-## Development server
+Você pode acessar a aplicação diretamente [aqui](https://gerenciador-de-cinema-3dgv.onrender.com/view/home/melhores/1).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+### Melhores Filmes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Nesta seção, você pode encontrar os filmes mais votados pela comunidade. Os filmes são apresentados em forma de grid, cada um contendo as seguintes informações:
+- ID
+- URL do poster
+- Nome do filme
 
-## Build
+### Filmes em Alta
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Aqui, você pode descobrir os filmes que estão em alta no momento. Os filmes são exibidos em um layout de grid e fornecem detalhes semelhantes aos apresentados na seção de Melhores Filmes.
 
-## Running unit tests
+### Meus Filmes (Favoritos)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Nesta página, você pode gerenciar sua lista de filmes favoritos. Você tem a capacidade de adicionar ou remover filmes da lista de favoritos. Os filmes favoritos também são exibidos na tela inicial, na forma de posters.
 
-## Running end-to-end tests
+### Barra de Busca
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A barra de busca permite que você pesquise filmes com base em uma palavra-chave. Os resultados da pesquisa são exibidos em uma lista, proporcionando informações detalhadas sobre os filmes encontrados.
 
-## Further help
+## Detalhes do Filme
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ao clicar em um filme na lista de Melhores Filmes, Filmes em Alta ou na lista de favoritos, você será direcionado para uma página com detalhes do filme. As informações apresentadas incluem:
+- Título do filme
+- Título original
+- Data de lançamento
+- Pôster principal
+- Trailer (ou trailers)
+- Gêneros
+- Sinopse
+- Créditos (diretor e elenco)
+
+## Detalhes do Ator
+
+Ao clicar em um ator na página de detalhes do filme, você será levado a uma página de detalhes do ator. As informações exibidas nesta página incluem:
+- Nome do ator
+- Carrossel de fotos
+- Biografia
+- Filmografia do ator, que, ao ser clicada, redireciona para a página de detalhes do filme correspondente.
+
+## Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+- Angular
+- TypeScript
+- Node.js
+- HTML
+- CSS
+- Bootstrap
+- API TMDB
+
+## Armazenamento de Dados
+
+Os filmes marcados como favoritos são armazenados localmente no navegador do usuário usando o LocalStorage.
+
+
