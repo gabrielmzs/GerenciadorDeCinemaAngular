@@ -12,3 +12,6 @@
     </div>
 
 </body>
+
+<ngb-pagination class="d-flex justify-content-center custom-pagination gap-5" [collectionSize]="90" [(page)]="page"
+    (pageChange)='CarregarPagina($event)'></ngb-pagination>
