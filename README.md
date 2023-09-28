@@ -50,6 +50,7 @@ Ao clicar em um ator na página de detalhes do filme, você será levado a uma p
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - Angular
 - TypeScript
+- Node.js
 - HTML
 - CSS
 - Bootstrap
@@ -59,4 +60,4 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Os filmes marcados como favoritos são armazenados localmente no navegador do usuário usando o LocalStorage.
 
-Divirta-se explorando o mundo do cinema com o Gerenciador de Cinema!
+
